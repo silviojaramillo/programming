@@ -19,6 +19,10 @@ a{
     color: var(--text-color-primary);
 }
 
+.active{
+    background-color: var(--hover-buttons);
+}
+
 nav{
     background-color: var(--background-color);
     display: flex;
@@ -53,6 +57,7 @@ nav a img{
     border: 2px solid var(--text-color-primary);
     position: absolute;
     right: 3%;
+    cursor: pointer;
 }
 
 .button-navbar:hover{
