@@ -42,14 +42,11 @@ nav a{
     display: flex;
     margin: 0 5% 0 5%;
     font-size: 20px;
-    flex-grow: initial;
-    align-items: center;
-    min-width: 154px;
 }
 
 nav .nav-links a{
     font-weight: 500;
-/*     margin: 0 10px 0 0; */
+    margin: 0 10px 0 0;
     font-size: 15px;
     box-sizing: content-box;
     justify-content: center;
@@ -63,52 +60,14 @@ nav a img{
     height: 35px;
     width: 35px;
     margin-left: 10px;
-    margin-left: 2px;
 }
 
 nav .nav-links{
-    visibility: hidden;
+    display: flex;
 }
-
-
-/* Ajustes para las diferentes pantallas */
-@media (width < 320px){
-    nav a{
-        font-size: 1rem;
-    }
-    nav .nav-links{
-        display: none;
-    }
-}
-
-@media (width > 319px) and (width < 482px){
-    nav a{
-        font-size: 1rem;
-        width: 30px;
-        height: 30px;
-    }
-    nav .nav-links{
-        display: none;
-    }
-}
-
-@media (width > 481px) and (width < 769px){
-    nav .nav-links{
-        display: flex;
-        visibility: visible;
-    }
-}
-
-@media (width > 768px){
-    nav .nav-links{
-        display: flex;
-        visibility: visible;
-    }
-}
-
-/* Fin de ajustes para las diferentes pantallas */
 
 .button-navbar{
+    /* visibility: hidden; */
     background-color: var(--background-buttons);
     font-size: 20px;
     border-radius: 5px;
