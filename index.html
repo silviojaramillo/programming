@@ -24,5 +24,44 @@
             <i class="fa-solid fa-bars"></i>
         </button>
     </nav>
+    <main>
+        <style>
+            section{
+                display: grid;
+                justify-content: center;
+                background-color: brown;
+                border: 2px solid blueviolet;
+                border-radius: 5px;
+                /* Para hacer un diseño responsive se procede a realizar empleando dos valores */
+                /* auto-fill -> ubica tantas columnas como espacio haya en la ventana, respetando el tamaño mínimo */
+                /* grid-template-columns: minmax(200px,1fr) repeat(6,1fr); */ /* Esto no es responsive */
+                /* De forma adaptativa */
+                grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+                grid-template-rows: repeat(3,100px);
+                /* auto-fit va a externder el tamaño de un elemento hasta que se cumpla la condición mínima y pueda mostrar dos elementos */
+
+                /* Esto se puede abreviar en una sola línea de código */
+                /* column-gap: 15px;
+                row-gap: 30px; */
+                /* La primera es la separación entre filas y la segunda es la sepación entre columnas */
+                gap: 32px 15px;
+                /* Si se desea poner la misma sepación para filas y columnas solo se establece el valor una vez */
+                /* gap: 15px; */
+            }
+            section div{
+                border: 2px solid orange;
+                border-radius: 5px;
+            }
+        </style>
+        <section>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </section>
+    </main>
 </body>
 </html>
