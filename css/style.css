@@ -25,6 +25,10 @@ a{
     border-radius: 3px;
 }
 
+.active:hover{
+    color: black;
+}
+
 nav{
     background-color: var(--background-color);
     display: flex;
@@ -40,14 +44,15 @@ nav a{
     font-size: 20px;
 }
 
-nav a ~ a{
+nav .nav-links a{
     font-weight: 500;
     margin: 0 10px 0 0;
     font-size: 15px;
     box-sizing: content-box;
+    justify-content: center;
 }
 
-nav a ~ a:hover{
+nav .nav-links a:hover{
     color: var(--text-color-secondary);
 }
 
@@ -55,6 +60,10 @@ nav a img{
     height: 35px;
     width: 35px;
     margin-left: 10px;
+}
+
+nav .nav-links{
+    display: flex;
 }
 
 .button-navbar{
